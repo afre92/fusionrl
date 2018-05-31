@@ -1,15 +1,83 @@
 /*
- * This is a manifest file that'll be compiled into application.css, which will include all the files
- * listed below.
- *
- * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
- * vendor/assets/stylesheets directory can be referenced here using a relative path.
- *
- * You're free to add application-wide styles to this file and they'll appear at the bottom of the
- * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
- * files in this directory. Styles in this file should be added after the last require_* statement.
- * It is generally better to create a new file per style scope.
- *
- *= require_tree .
- *= require_self
- */
+*= require_self
+*= require sb-admin
+*= require_tree .
+*/
+
+
+
+
+/* hides arrows next to action icon on administrators index  */
+.dropdown-toggle::after {
+	display: none !important;
+}
+
+body.sidenav-toggled footer.sticky-footer {
+	width: 100% !important;
+}
+
+h6 {
+	font-weight: 300 !important;
+}
+
+.sub_menu_inline{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+ }
+
+ tbody{
+ 	font-size: .9rem !important;
+ }
+
+ #club_menu_item_item_type {
+ 	width: 100%;
+ }
+
+.item_category_example {
+  font-size: 70%;
+  opacity: 0.7;
+  margin-left: 5px;
+}
+
+ul {
+  list-style:none;
+  padding: 0;
+}
+
+
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    right: 0 !important;
+    left: auto !important;
+    z-index: 1000;
+    display: none;
+    float: left;
+    min-width: 10rem;
+    padding: .5rem 0;
+    margin: .125rem 0 0;
+    font-size: 1rem;
+    color: #212529;
+    text-align: left;
+    list-style: none;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid rgba(0,0,0,.15);
+    border-radius: .25rem;
+}
+
+.dropdown-menu.show{
+	width: 300px;
+}
+
+.current-user-pop-up {
+	margin-left: 20px;
+}
+
+.optional-password-text{
+  font-size: small;
+    opacity: 0.7;
+}
+
+

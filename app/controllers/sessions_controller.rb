@@ -6,6 +6,7 @@ class SessionsController < ApplicationController
 			session[:user_id] = params[:user_name]
 			redirect_to root_url, notice: 'Logged in'
 		else
+			flash[:error] = 'Invalid credentials'
 			render 'new'
 		end
 	end
