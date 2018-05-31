@@ -10,6 +10,10 @@
   </head>
 
   <body>
+    <div id='user_header'>
+      <%= link_to "Sign up", new_user_path %>
+      <%= link_to "log in", login_path %>
+    </div>
     <%= yield %>
   </body>
 </html>

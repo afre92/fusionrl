@@ -62,6 +62,6 @@ def find_by_binary_search(key)
 	end
 
 	return false
-	end
+end
 
 end
